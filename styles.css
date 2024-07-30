@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    transition: background 0.5s;
+}
+
+nav {
+    width: 100%;
+    background-color: #34495e;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #e74c3c;
+}
+
+#darkModeToggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#darkModeToggle:hover {
+    background-color: #c0392b;
+}
+
+.container {
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(100% - 22px);
+    max-width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#result {
+    font-size: 1.2em;
+}
+
+.dark-mode {
+    background-color: #1a252f;
+    color: #bdc3c7;
+}
+
+.dark-mode nav {
+    background-color: #1a252f;
+}
+
+.dark-mode .container {
+    background-color: #1a252f;
+}
+
+.dark-mode .nav-links li a:hover {
+    background-color: #e74c3c;
+}
+
+/* Emoji background patterns */
+body.emoji-0 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text y="50%" x="50%" dy=".35em" text-anchor="middle" font-size="200">👶</text></svg>');
+}
+
+body.emoji-1 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text y="50%" x="50%" dy=".35em" text-anchor="middle" font-size="200">🧒</text></svg>');
+}
+
+body.emoji-2 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text y="50%" x="50%" dy=".35em" text-anchor="middle" font-size="200">🧑</text></svg>');
+}
+
+body.emoji-3 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text y="50%" x="50%" dy=".35em" text-anchor="middle" font-size="200">🧔</text></svg>');
+}
+
+body.emoji-4 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text y="50%" x="50%" dy=".35em" text-anchor="middle" font-size="200">👨‍🦳</text></svg>');
+}
+
+body.emoji-5 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text y="50%" x="50%" dy=".35em" text-anchor="middle" font-size="200">👴</text></svg>');
+}
+
+body.emoji-6 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><text y="50%" x="50%" dy=".35em" text-anchor="middle" font-size="200">🧓</text></svg>');
+}
+
+body.emoji-0, body.emoji-1, body.emoji-2, body.emoji-3, body.emoji-4, body.emoji-5, body.emoji-6 {
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
